@@ -33,7 +33,7 @@ jobs:
           pip install pbr
 
       - name: Run Bandit
-        run: bandit -r app.py
+        run: bandit -r .
 
   docker:
     name: Build & Push Docker image
